@@ -1,0 +1,3 @@
+In this project I only use the template from stm32 and freeRTOS official web.
+The goal is very simple to control two LED on the development board.
+To get the sense of the Real time OS.
