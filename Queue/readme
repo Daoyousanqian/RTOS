@@ -1,0 +1,5 @@
+this folder is used to build queue in the Kernel of FreeRT OS
+inlcuding create queue
+send to queue
+receive from the queue 
+it is the basic function to communicate between tasks
