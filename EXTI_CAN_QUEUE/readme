@@ -1,0 +1,7 @@
+kEY WORDS: ARM, FressRTOS, CAN, Interrupt, Queue.
+
+This file is used for external interrupt and CAN bus interrupt in STM32 ARM RTOS.
+The idea is when there is specific ID comes, the interruppt handler would write one value into the queue.
+Another task with higher priority would transmit message to the bus. 
+When press the key, it would printf some data to usart port.
+And the external Interrupt comes from the KEYs. 
