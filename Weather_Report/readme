@@ -1,0 +1,18 @@
+The first module we need to use is ES2866 which is the Wifi chip.
+Some commands for the module.
+AT ： test the presense, the response is OK
+AT+ CWJAP = "SSID","PWD"
+AT+CIPSTART="TCP","api.seniverse.com",80
+AT+CIPMODE=1: in the mode you can see the data directly
+AT+ CIPSEND: send the data
+
+The API we used is "api.seniverse.com" and port is 80. 
+In this case we get the data in JSON from the API. 
+
+The command is: 
+" GET https://api.seniverse.com/v3/weather/daily.json?
+key=xxxxxx&location="city name"&language=xx&unit=c&start=0&days=x " 
+
+We implement this case on STM32 with RTOS (realtime-operating system)
+
+
